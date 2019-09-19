@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp"
+    tools:context="com.hensen.rxjavalearning.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:text="3章：部分操作符需要在Android上使用" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_margin="4dp"
+            android:background="#F0F0F0"
+            android:onClick="interval"
+            android:text="interval"
+            android:textAllCaps="false" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_margin="4dp"
+            android:background="#F0F0F0"
+            android:onClick="timer"
+            android:text="timer"
+            android:textAllCaps="false" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_margin="4dp"
+            android:background="#F0F0F0"
+            android:onClick="flatMap"
+            android:text="flatMap"
+            android:textAllCaps="false" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_margin="4dp"
+            android:background="#F0F0F0"
+            android:onClick="sample"
+            android:text="sample"
+            android:textAllCaps="false" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_margin="4dp"
+            android:background="#F0F0F0"
+            android:onClick="join"
+            android:text="join"
+            android:textAllCaps="false" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_margin="4dp"
+            android:background="#F0F0F0"
+            android:onClick="combineLatest"
+            android:text="combineLatest"
+            android:textAllCaps="false" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_margin="4dp"
+            android:background="#F0F0F0"
+            android:onClick="retryWhen"
+            android:text="retryWhen"
+            android:textAllCaps="false" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_margin="4dp"
+            android:background="#F0F0F0"
+            android:onClick="deley"
+            android:text="deley"
+            android:textAllCaps="false" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_margin="4dp"
+            android:background="#F0F0F0"
+            android:onClick="timeInterval"
+            android:text="timeInterval"
+            android:textAllCaps="false" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_margin="4dp"
+            android:background="#F0F0F0"
+            android:onClick="timeOut"
+            android:text="timeOut"
+            android:textAllCaps="false" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_margin="4dp"
+            android:background="#F0F0F0"
+            android:onClick="timeStamp"
+            android:text="timeStamp"
+            android:textAllCaps="false" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_margin="4dp"
+            android:background="#F0F0F0"
+            android:onClick="amb"
+            android:text="amb"
+            android:textAllCaps="false" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_margin="4dp"
+            android:background="#F0F0F0"
+            android:onClick="skipUntil"
+            android:text="skipUntil"
+            android:textAllCaps="false" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_margin="4dp"
+            android:background="#F0F0F0"
+            android:onClick="takeUntil"
+            android:text="takeUntil"
+            android:textAllCaps="false" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_margin="4dp"
+            android:background="#F0F0F0"
+            android:onClick="replay"
+            android:text="replay"
+            android:textAllCaps="false" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:text="4章：RxJava基本响应类型" />
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_margin="4dp"
+            android:background="#F0F0F0"
+            android:onClick="observable"
+            android:text="observable"
+            android:textAllCaps="false" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_margin="4dp"
+            android:background="#F0F0F0"
+            android:onClick="flowable"
+            android:text="flowable"
+            android:textAllCaps="false" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_margin="4dp"
+            android:background="#F0F0F0"
+            android:onClick="single"
+            android:text="single"
+            android:textAllCaps="false" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_margin="4dp"
+            android:background="#F0F0F0"
+            android:onClick="completable"
+            android:text="completable"
+            android:textAllCaps="false" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_margin="4dp"
+            android:background="#F0F0F0"
+            android:onClick="maybe"
+            android:text="maybe"
+            android:textAllCaps="false" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:text="5章：RxJava背压策略" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_margin="4dp"
+            android:background="#F0F0F0"
+            android:onClick="missing"
+            android:text="missing"
+            android:textAllCaps="false" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_margin="4dp"
+            android:background="#F0F0F0"
+            android:onClick="error"
+            android:text="error"
+            android:textAllCaps="false" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_margin="4dp"
+            android:background="#F0F0F0"
+            android:onClick="buffer"
+            android:text="buffer"
+            android:textAllCaps="false" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_margin="4dp"
+            android:background="#F0F0F0"
+            android:onClick="drop"
+            android:text="drop"
+            android:textAllCaps="false" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_margin="4dp"
+            android:background="#F0F0F0"
+            android:onClick="latest"
+            android:text="latest"
+            android:textAllCaps="false" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:text="6章：RxJava基础实战" />
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_margin="4dp"
+            android:background="#F0F0F0"
+            android:onClick="verify"
+            android:text="模拟发送验证码"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/search"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_margin="4dp"
+            android:background="#F0F0F0"
+            android:gravity="center"
+            android:onClick="query"
+            android:text="模拟用户点击防抖动"
+            android:textAllCaps="false"
+            android:textSize="14dp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_margin="4dp"
+            android:background="#F0F0F0"
+            android:onClick="vip"
+            android:text="模拟会员信息的合并"
+            android:textAllCaps="false" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:text="8章：RxJava高级用法（二）" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_margin="4dp"
+            android:background="#F0F0F0"
+            android:onClick="publishSubject"
+            android:text="publishSubject"
+            android:textAllCaps="false" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_margin="4dp"
+            android:background="#F0F0F0"
+            android:onClick="behaviorSubject"
+            android:text="behaviorSubject"
+            android:textAllCaps="false" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_margin="4dp"
+            android:background="#F0F0F0"
+            android:onClick="replaySubject"
+            android:text="replaySubject"
+            android:textAllCaps="false" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_margin="4dp"
+            android:background="#F0F0F0"
+            android:onClick="asyncSubject"
+            android:text="asyncSubject"
+            android:textAllCaps="false" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_margin="4dp"
+            android:background="#F0F0F0"
+            android:onClick="transpondData"
+            android:text="transpondData"
+            android:textAllCaps="false" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:text="9章：RxJava混合开发" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_margin="4dp"
+            android:background="#F0F0F0"
+            android:onClick="main2"
+            android:text="RxJava混合实战"
+            android:textAllCaps="false" />
+
+    </LinearLayout>
+</ScrollView>
